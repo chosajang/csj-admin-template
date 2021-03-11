@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- ... -->
+  <script src="./assets/js/admin-layout.js"></script>
+</head>
+<body class="bg-gray-100">
+  <!--// Header -->
+  <header id="header" class="flex flex-none w-full h-16 bg-gray-800 sticky top-0 z-10">
+    <!--// mobile menu icon -->
+    <div id="mobile-menu-btn" class="flex flex-none items-center px-4 bg-gray-800 md:hidden cursor-pointer text-gray-200">
+      <i class="fas fa-bars text-2xl"></i>
+    </div>
+    <!--// logo -->
+    <div class="flex flex-grow md:w-64 items-center z-10">
+      <a href="#" class="flex m-auto md:ml-5 text-lg text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
+        <object type="image/svg+xml" class="w-8 h-8 mr-2" data="./assets/images/tailwindcss-logo.svg"></object>
+        <!-- <i class="fas fa-wind"></i> -->
+        c-labs : tailwind
+      </a>
+    </div>
+    <!--// personal menu -->
+    <div class="flex flex-none items-center px-4 z-11">
+      <div id="personal-info" class="mr-4 text-gray-200 cursor-pointer"><i class="fas fa-user text-2xl"></i></div>
+      <div id="personal-menu" class="fixed hidden top-16 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
+        <ul class="w-full text-sm select-none">
+          <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-user-circle"></i> Profile</li>
+          <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!--// Contents -->
+  <section class="w-full">
+    <!--// side-bar : ST -->
+    <aside id="aside-menu" class="shadow-md bg-gray-700 text-gray-200 text-sm items-center hidden md:block left-0 fixed top-16 bottom-0 overflow-y-auto flex-row flex-no-wrap overflow-hidden w-52 z-10">
+      <!--// Profile Info -->
+      <div class="hidden md:flex flex-row items-center py-2 bg-gray-900">
+        <div class="flex-none w-14 h-14 ml-2"><img src="" onerror="this.src='./assets/images/ghost-white.png'" alt="profile" /></div>
+        <div class="flex-col space-y-1 pl-2 w-full h-14 justify-content items-center">
+          <div class="mt-2 whitespace-nowrap text-sm">유저이름</div>
+          <div class="text-xs whitespace-nowrap">별명</div>
+        </div>
+      </div>
+      <!--// Left Menu : ST -->
+      <ul class="select-none" id="menu-ext">
+        <li class="pt-4 py-2 pl-4"><p class="text-xs font-bold text-gray-300">기본 그룹</p></li>
+        <li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><a href="javascript:void(0);"><i class="far fa-user mr-4"></i>User</a></li>
+        <li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><a href="javascript:void(0);"><i class="far fa-clipboard mr-4"></i>Board</a></li>
+        <li class="pt-4 py-2 pl-4"><p class="text-xs font-bold text-gray-300">2차 그룹</p></li>
+        <li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500 inline-flex items-center justify-between w-full" for="ext3">
+          <span class="inline-flex items-center"><i class="fas fa-layer-group mr-4"></i>Menu Group</span>
+          <span class="pr-4"><i class="fas fa-angle-right"></i></span>
+        </li>
+        <li id="ext3" class="hidden">
+          <ul class="bg-gray-800">
+            <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
+              <a href="javascript:void(0);"><i class="fas fa-angle-right mr-4"></i>SubMenu 1</a>
+            </li>
+            <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
+              <a href="javascript:void(0);"><i class="fas fa-angle-right mr-4"></i>SubMenu 2</a>
+            </li>
+            <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
+              <a href="javascript:void(0);"><i class="fas fa-angle-right mr-4"></i>SubMenu 2</a>
+            </li>
+            <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
+              <a href="javascript:void(0);"><i class="fas fa-angle-right mr-4"></i>SubMenu 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500 inline-flex items-center justify-between w-full" for="ext4">
+          <span class="inline-flex items-center"><i class="fas fa-layer-group mr-4"></i>Menu Group</span>
+          <span class="pr-4"><i class="fas fa-angle-right"></i></span>
+        </li>
+        <li id="ext4" class="hidden">
+          <ul class="bg-gray-800">
+            <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
+              <a href="javascript:void(0);"><i class="fas fa-angle-right mr-4"></i>SubMenu 1</a>
+            </li>
+            <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
+              <a href="javascript:void(0);"><i class="fas fa-angle-right mr-4"></i>SubMenu 2</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!--// Left Menu : ED -->
+    </aside>
+    <!--// side-bar : ST -->
+
+    <!--// contents -->
+    <section class="md:ml-52">
+      <section class="container p-4 md:p-6">
+        <!-- Title -->
+        <div class="border-b mb-4"><p class="text-base font-light">Basic Component</p></div>
+        <!-- Basic Container -->
+        <div class="shadow p-4 bg-white">
+          <div class="text-left">
+            <h3 class="mb-2 text-gray-700">Title</h3>
+            <p>Contents</p>
+            <p class="transition duration-500 opacity-100 hover:opacity-0">Transition TEST(Event:hover)</p>
+          </div>
+        </div>
+
+        <!-- basic card -->
+        <div class="shadow my-4 p-4 bg-white">
+          <div class="text-left">
+              <h3 class="mb-2 text-gray-700">Card Title</h3>
+              <p class="text-grey-600 text-sm">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+              </p>
+          </div>
+      ​
+          <div class="mt-4">
+              <a href="#" class="no-underline mr-4 text-blue-500 hover:text-blue-400">Link 1</a>
+              <a href="#" class="no-underline mr-4 text-blue-500 hover:text-blue-400">Link 2</a>
+          </div>
+        </div>
+        
+      </section>
+    </section>
+  </section>
+</body>
+</html>
+
+

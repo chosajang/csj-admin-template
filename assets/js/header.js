@@ -5,10 +5,11 @@ const headerHTML = `
 </div>
 <!--// logo -->
 <div class="flex flex-grow md:w-64 items-center z-10">
-  <a href="#" class="flex m-auto md:ml-5 text-lg text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
-    <object type="image/svg+xml" class="w-8 h-8 mr-2" data="./assets/images/tailwindcss-logo.svg"></object>
+  <a href="#" class="flex m-auto md:ml-3 text-lg text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
+    <!-- <object type="image/svg+xml" class="w-8 h-8 mr-2" data="./assets/images/tailwindcss-logo.svg"></object> -->
+    <img class="w-8 h-8 mr-2" src="./assets/images/wind-logo.png"/>
     <!-- <i class="fas fa-wind"></i> -->
-    c-labs : tailwind
+    CSJ Admin Template
   </a>
 </div>
 <!--// personal menu -->

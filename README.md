@@ -13,7 +13,7 @@
 ### 프로젝트 실행하기
 1. 프로젝트 복사하기
 ```shell
-# git clone https://github.com/chosajang/tailwind.git
+# git clone https://github.com/chosajang/csj-admin-template.git
 
 # cd tailwind
 ```

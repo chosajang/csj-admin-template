@@ -27,5 +27,5 @@
 
 3. http 서버 설치 및 실행
 ```shell
-# yarn http-server --port=80 ./
+# yarn http-server --port=80 /
 ```

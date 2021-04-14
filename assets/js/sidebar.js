@@ -28,7 +28,7 @@ const asideHTML = `
     </ul>
   </li>
   <li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500 inline-flex items-center justify-between w-full" for="ext4">
-    <span class="inline-flex items-center"><i class="fas fa-layer-group mr-4"></i>Login Form</span>
+    <span class="inline-flex items-center"><i class="fas fa-layer-group mr-4"></i>Login</span>
     <span class="pr-4"><i class="fas fa-angle-right transition-transform transform"></i></span>
   </li>
   <li id="ext4" class="hidden">

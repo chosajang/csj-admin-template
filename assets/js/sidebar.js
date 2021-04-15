@@ -19,11 +19,11 @@ const asideHTML = `
   </li>
   <li id="ext3" class="hidden">
     <ul class="bg-gray-800">
-      <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
-        <a href="/html/layouts/admin-layout.html"><i class="fas fa-angle-right mr-4"></i>Admin Layout</a>
+      <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500" onclick="location.href='/html/layouts/admin-layout.html'">
+        <a href="#"><i class="fas fa-angle-right mr-4"></i>Admin Layout</a>
       </li>
-      <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500">
-        <a href="/html/layouts/readable-layout.html"><i class="fas fa-angle-right mr-4"></i>Readable Layout</a>
+      <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500" onclick="location.href='/html/layouts/readable-layout.html'">
+        <a href="#"><i class="fas fa-angle-right mr-4"></i>Readable Layout</a>
       </li>
     </ul>
   </li>
@@ -70,4 +70,8 @@ document.addEventListener("DOMContentLoaded", function(){
   btnMobileMenuObj.addEventListener('click',() => {
     asideObj.classList.toggle('hidden');
   });
+
+  // 주소기반 메뉴 포커스
+  const currentUrl = window.location.href;
+  console.log(currentUrl);
 });

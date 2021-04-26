@@ -9,8 +9,8 @@ phases:
       # - command
   post_build:
     commands:
-      - ls -al
-      - aws s3 cp --recursive dist/ s3://csj-admin-template
+      # - ls -al
+      # - aws s3 cp --recursive dist/ s3://csj-admin-template
 artifacts:
   files:
     - '**/*'

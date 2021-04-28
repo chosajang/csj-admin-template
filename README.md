@@ -1,6 +1,6 @@
 ## CSJ Admin Template
 - 개발스펙 : HTML5, Javascript, Tailwind CSS 2.x, Font Awesome 5.x Free
-- Tailwind, Font Awesome 선언
+- Tailwind, Font Awesome 선언 
 ```javascript
 <head>
 ...

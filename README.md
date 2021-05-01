@@ -1,6 +1,6 @@
 ## CSJ Admin Template
 - 개발스펙 : HTML5, Javascript, Tailwind CSS 2.x, Font Awesome 5.x Free
-- Tailwind, Font Awesome 선언 
+- Tailwind, Font Awesome 선언
 ```javascript
 <head>
 ...
@@ -13,9 +13,9 @@
 ### 프로젝트 실행하기
 1. 프로젝트 복사하기
 ```shell
-# git clone https://github.com/chosajang/csj-admin-template.git
+# git clone https://git-codecommit.ap-northeast-2.amazonaws.com/v1/repos/AI_Recruit-publish
 
-# cd tailwind
+# cd AI_Recruit-publish
 ```
 
 2. 로컬 실행환경 설정

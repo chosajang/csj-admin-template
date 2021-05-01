@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+  
+  <script src="../assets/js/common.js"></script>
+  <script defer src="../assets/js/header.js" ></script>
+  <script defer src="../assets/js/sidebar.js" ></script>
+</head>
+<body class="bg-gray-50">
+  <!-- // Header : ST -->
+  <header id="header"></header>
+  <!-- // Header : ED -->
+
+  <!--// Main : ST -->
+  <main class="w-full">
+    <!--// Sidebar -->
+    <aside id="aside-menu"></aside>
+    
+    <!--// Contents : ST -->
+    <div class="mb-16 md:ml-52">
+      <div class="container max-w-screen-lg m-auto p-4 md:p-6"><!--// MainPage : ST -->
+
+        <!-- Breadcrumb : ST -->
+        <div class="mb-4">
+          <nav aria-label="breadcrumb"> 
+            <ol class="breadcrumb flex text-sm">
+              <li class="breadcrumb-item text-gray-600"><a href="./" class="text-gray-600 hover:text-blue-700 mx-2">관리자 계정 관리</a></li>
+              <li><i class="fas fa-chevron-right text-gray-300"></i></li>
+              <li class="breadcrumb-item active text-blue-700 hover:text-blue-700 mx-2" aria-current="page">관리자 정보 조회</li> 
+            </ol>
+          </nav>
+        </div>
+        <!-- Breadcrumb : ED -->
+
+        <!-- Page Title -->
+        <div class="border-b mb-4"><p class="text-2xl font-bold">관리자 정보 조회</p></div>
+        
+        <!--// Card : ST -->
+        <div class="my-4">
+          <div class="flex flex-col rounded bg-white shadow-sm">
+
+            <div class="flex flex-row grid grid-cols-6 m-4 items-baseline">
+              <div class="col-span-6 text-lg font-bold">{관리자 이름} 정보</div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 items-center justify-center m-4">
+              <div class="md:col-start-2 md:col-span-2">
+                <img id="profile_image" class="w-32 h-32 rounded-full mx-auto" src="https://www.gravatar.com/avatar/2acfb745ecf9d4dccb3364752d17f65f?s=260&d=mp" alt="John Doe">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 items-center justify-center m-4">
+              <div class="md:col-start-2 md:col-span-2">
+                <label class="block text-sm text-gray-00" for="cus_name">아이디</label>
+                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="true" value="wlqdprkrhtlvek" aria-label="Name" readonly>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 items-center justify-center m-4">
+              <div class="md:col-start-2 md:col-span-2">
+                <label class="block text-sm text-gray-00" for="cus_name">이름</label>
+                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="true" value="관리자" aria-label="Name" readonly>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 items-center justify-center m-4">
+              <div class="md:col-start-2 md:col-span-2">
+                <label class="block text-sm text-gray-00" for="cus_name">이메일</label>
+                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="true" value="home@plz.com" aria-label="Name" readonly>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 items-center justify-center m-4">
+              <div class="md:col-start-2 md:col-span-2">
+                <label class="block text-sm text-gray-00" for="cus_name">연락처</label>
+                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="cus_name" name="cus_name" type="text" required="true" value="010-8282-0000" aria-label="Name" readonly>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-8 m-4">
+              <div class="col-span-1 md:col-start-3 md:col-span-1">
+                <input type="button" id="btn-remove" class="rounded bg-red-500 py-1 px-6 cursor-pointer text-white w-26 hover:bg-red-600" value="연결해제"/>
+              </div>
+              <div class="col-span-7 md:col-span-3 grid items-center justify-items-end">
+                <div>
+                  <input type="button" id="btn-list" class="rounded bg-gray-500 py-1 px-6 cursor-pointer text-white w-20 hover:bg-gray-600" value="목록"/>
+                  <input type="button" id="btn-modify" class="rounded bg-blue-500 py-1 px-6 cursor-pointer text-white w-26 ml-2 hover:bg-blue-600" value="수정하기"/>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div><!--// Card : ED -->
+
+      </div><!--// MainPage : ED -->
+    </div>
+    <!--// Contents : ED -->
+  </main>
+  <!--// Main : ED -->
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    // 계정 등록
+    document.getElementById('btn-modify').addEventListener('click', () => {
+      location.href = './modify.html';
+    })
+
+    // 목록
+    document.getElementById('btn-list').addEventListener('click', () => {
+      history.back();
+    })
+
+    // 연결해제
+    document.getElementById('btn-remove').addEventListener('click', () => {
+      Swal.fire({
+        title: '관리자 역할 연결해제',
+        text: '솔루션 관리자 역할을 해제 하시겠습니까?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: `네, 해제합니다`,
+        cancelButtonText: `아니오`,
+        reverseButtons: true
+      }).then((result) => {
+        // 등록 API 호출
+        if (result.isConfirmed) {
+          Swal.fire('해제되었습니다', '', 'success')
+          document.getElementById('btn-remove').classList.remove('hover:bg-red-600')
+          document.getElementById('btn-remove').classList.remove('cursor-pointer')
+          document.getElementById('btn-remove').classList.add('opacity-50')
+          document.getElementById('btn-remove').setAttribute('disabled', true)
+        }
+      })
+    })
+  })
+</script>
+</html>

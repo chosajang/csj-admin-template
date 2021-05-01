@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  
+  <script src="../assets/js/common.js"></script>
+  <script defer src="../assets/js/header.js" ></script>
+  <script defer src="../assets/js/sidebar.js" ></script>
+</head>
+<body class="bg-gray-50">
+  <!-- // Header : ST -->
+  <header id="header"></header>
+  <!-- // Header : ED -->
+
+  <!--// Main : ST -->
+  <main class="w-full">
+    <!--// Sidebar : ST -->
+    <aside id="aside-menu"></aside>
+    <!--// Sidebar : ED -->
+    
+    <!--// Contents : ST -->
+    <div class="mb-16 md:ml-52">
+      <div class="container max-w-screen-lg m-auto p-4 md:p-6"><!--// MainPage : ST -->
+
+        <!-- Breadcrumb : ST -->
+        <div class="mb-4">
+          <nav aria-label="breadcrumb"> 
+            <ol class="breadcrumb flex text-sm">
+              <li class="breadcrumb-item text-gray-600"><a href="./" class="text-gray-600 hover:text-blue-700 mx-2">기업 관리</a></li>
+              <li><i class="fas fa-chevron-right text-gray-300"></i></li>
+              <li class="breadcrumb-item active text-blue-700 hover:text-blue-700 mx-2" aria-current="page">기업 목록</li> 
+            </ol>
+          </nav>
+        </div>
+        <!-- Breadcrumb : ED -->
+
+        <!--// Board 2 Style : ST -->
+        <div class="my-4">
+            <div class="grid grid-cols-12 gap-4"><!--// Card Col : ST -->
+  
+              <!--// Table : ST -->
+              <div class="col-span-12">
+                <div class="flex flex-col rounded min-w-full p-4 bg-white shadow-sm">
+
+                  <!--// Table Title : ST -->
+                  <div class="flex flex-row grid grid-cols-6 items-baseline">
+                    <div class="col-span-3 text-lg font-bold">
+                      기업 목록
+                    </div>
+                    <div class="grid col-span-3 text-sm justify-items-end leading-6">
+                      <button class="rounded flex shadow bg-blue-500 px-6 py-1 text-white hover:bg-blue-600" onclick="location.href='./create.html'" >기업 등록</button>
+                    </div>
+                  </div>
+                  <div class="flex flex-row grid grid-cols-6 my-2 items-baseline">
+                    <input type="text" class="placeholder-gray-400 rounded w-full py-1 px-4 text-base font-light border border-gray-400" value="" placeholder="Search"/>
+                    <input type="button" class="rounded bg-blue-500 py-1 px-6 cursor-pointer text-white w-20 ml-2 hover:bg-blue-600" value="검색"/>
+                  </div>
+                  <!--// Table Title : ED -->
+
+                  <table class="">
+                    <thead>
+                      <tr class="text-sm text-gray-600 bg-gray-200 rounded">
+                        <th class="p-2 rounded-tl rounded-bl"></th>
+                        <th class="p-2">기업명</th>
+                        <th class="p-2">기업 관리자</th>
+                        <th class="p-2">내부 담당자</th>
+                        <th class="p-2">상태</th>
+                        <th class="p-2 rounded-tr rounded-br">등록일시</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-sm font-bold text-gray-600 text-center">
+
+                      <tr class="border-b hover:bg-gray-100 h-14">
+                        <td class="p-2">1</td>
+                        <td class="p-2"><a href="view.html" class="text-blue-500 hover:underline">Google</a></td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <div class="mr-2">
+                              <img class="w-10 rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg" onerror="this.src='/html/admin/assets/images/user.png'" />
+                            </div>
+                            선다 피차이
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <img class="w-8 h-8 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/10.jpg"/>
+                            <img class="w-8 h-8 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/women/11.jpg"/>
+                            <img class="w-8 h-8 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/men/12.jpg"/>
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                            <span aria-hidden="" class="absolute inset-0 bg-green-200 opacity-50 rounded-lg"></span>
+                            <span class="relative text-xs">승인(운영중)</span>
+                          </span>
+                        </td>
+                        <td class="p-2">2021-03-02 13:03</td>
+                      </tr>
+
+                      <tr class="border-b hover:bg-gray-100 h-14">
+                        <td class="p-2">2</td>
+                        <td class="p-2"><a href="view.html" class="text-blue-500 hover:underline">Amazon</a></td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <div class="mr-2">
+                              <img class="w-10 rounded-full" src="https://randomuser.me/api/portraits/men/2.jpg" onerror="this.src='/html/admin/assets/images/user.png'" />
+                            </div>
+                            제프 베조스
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <img class="w-8 h-8 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/10.jpg"/>
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          <span class="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                            <span aria-hidden="" class="absolute inset-0 bg-green-200 opacity-50 rounded-lg"></span>
+                            <span class="relative text-xs">승인(운영중)</span>
+                          </span>
+                        </td>
+                        <td class="p-2">2021-03-02 13:03</td>
+                      </tr>
+
+                      <tr class="border-b hover:bg-gray-100 h-14">
+                        <td class="p-2">3</td>
+                        <td class="p-2"><a href="view.html" class="text-blue-500 hover:underline">Datadogs</a></td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <div class="mr-2">
+                              <img class="w-10 rounded-full" src="https://randomuser.me/api/portraits/men/3.jpg" onerror="this.src='/html/admin/assets/images/user.png'" />
+                            </div>
+                            올리비에 포멜
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          -
+                        </td>
+                        <td class="p-2">
+                          <span class="relative inline-block px-3 py-1 font-semibold text-blue-900 leading-tight">
+                            <span aria-hidden="" class="absolute inset-0 bg-blue-200 opacity-50 rounded-lg"></span>
+                            <span class="relative text-xs">승인대기</span>
+                          </span>
+                        </td>
+                        <td class="p-2">2021-03-02 13:03</td>
+                      </tr>
+
+                      <tr class="border-b hover:bg-gray-100 h-14">
+                        <td class="p-2">4</td>
+                        <td class="p-2"><a href="view.html" class="text-blue-500 hover:underline">Tasla</a></td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <div class="mr-2">
+                              <img class="w-10 rounded-full" src="https://randomuser.me/api/portraits/men/4.jpg" onerror="this.src='/html/admin/assets/images/user.png'" />
+                            </div>
+                            일론 머스크
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          -
+                        </td>
+                        <td class="p-2">
+                          <span class="relative inline-block px-3 py-1 font-semibold text-red-900 leading-tight">
+                            <span aria-hidden="" class="absolute inset-0 bg-red-200 opacity-50 rounded-lg"></span>
+                            <span class="relative text-xs">승인보류</span>
+                          </span>
+                        </td>
+                        <td class="p-2">2021-03-02 13:03</td>
+                      </tr>
+
+                      <tr class="border-b hover:bg-gray-100 h-14">
+                        <td class="p-2">4</td>
+                        <td class="p-2"><a href="view.html" class="text-blue-500 hover:underline">Westwood</a></td>
+                        <td class="p-2">
+                          <div class="flex items-center justify-center">
+                            <div class="mr-2">
+                              <img class="w-10 rounded-full" src="https://randomuser.me/api/portraits/men/5.jpg" onerror="this.src='/html/admin/assets/images/user.png'" />
+                            </div>
+                            루이스 캐슬
+                          </div>
+                        </td>
+                        <td class="p-2">
+                          -
+                        </td>
+                        <td class="p-2">
+                          <span class="relative inline-block px-3 py-1 font-semibold text-red-600 leading-tight">
+                            <span aria-hidden="" class="absolute inset-0 opacity-50 rounded-lg"></span>
+                            <span class="relative text-xs">운영중지</span>
+                          </span>
+                        </td>
+                        <td class="p-2">2021-03-02 13:03</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <!--// Pagination : ST -->
+                  <div class="flex items-center justify-center py-4">
+                    <ul class="flex text-sm">
+                      <li class="mx-1 px-3 py-2 text-gray-500 rounded-lg">
+                          <a class="flex items-center font-bold" href="#">
+                              <span class="mx-1">previous</span>
+                          </a>
+                      </li>
+                      <li class="mx-1 px-3 py-2 bg-gray-700 text-gray-200 hover:bg-gray-700 hover:text-gray-200 rounded">
+                          <a class="font-bold" href="#">1</a>
+                      </li>
+                      <li class="mx-1 px-3 py-2 text-gray-700 hover:bg-gray-700 hover:text-gray-200 rounded">
+                          <a class="font-bold" href="#">2</a>
+                      </li>
+                      <li class="mx-1 px-3 py-2 text-gray-700 hover:bg-gray-700 hover:text-gray-200 rounded">
+                          <a class="font-bold" href="#">3</a>
+                      </li>
+                      <li class="mx-1 px-3 py-2 text-gray-700 hover:bg-gray-700 hover:text-gray-200 rounded">
+                          <a class="flex items-center font-bold" href="#">
+                              <span class="mx-1">Next</span>
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--// Pagination : ED -->
+                </div>
+              </div>
+              <!--// Table : ED -->
+  
+            </div><!--// Card Col : ED -->
+          </div>
+          <!--// Board 2 Style : ED -->
+
+      </div><!--// MainPage : ED -->
+    </div>
+    <!--// Contents : ED -->
+  </main>
+  <!--// Main : ED -->
+</body>
+</html>

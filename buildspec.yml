@@ -1,17 +1,11 @@
 version: 0.1
 phases:
-  install:
-    commands:
-      # - npm install
   build:
     commands:
       # - npm run build
-      # - command
   post_build:
     commands:
       # - ls -al
-      # - aws s3 cp --recursive dist/ s3://csj-admin-template
 artifacts:
   files:
     - '**/*'
-# base-directory : 'dist/*'

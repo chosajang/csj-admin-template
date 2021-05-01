@@ -6,10 +6,10 @@ const headerHTML = `
 <!--// logo -->
 <div class="flex flex-grow md:w-64 items-center z-10">
   <a href="#" class="flex m-auto md:ml-3 text-lg text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
-    <!-- <object type="image/svg+xml" class="w-8 h-8 mr-2" data="${siteRoot}assets/images/tailwindcss-logo.svg"></object> -->
-    <img class="w-8 h-8 mr-2" src="${siteRoot}assets/images/research.png"/>
+    <!-- <object type="image/svg+xml" class="w-8 h-8 mr-2" data="${documentRoot}assets/images/tailwindcss-logo.svg"></object> -->
+    <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/research.png"/>
     <!-- <i class="fas fa-wind"></i> -->
-    {기업명} 관리자
+    AI채용 솔루션 관리자
   </a>
 </div>
 <!--// personal menu -->
@@ -18,7 +18,7 @@ const headerHTML = `
   <div id="personal-menu" class="fixed hidden top-16 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
     <ul class="w-full text-sm select-none">
       <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-user-circle"></i> Profile</li>
-      <a href="${siteRoot}login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
+      <a href="${documentRoot}login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
     </ul>
     <ul class="w-full text-sm select-none border-t-2">
       <a href="/"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-door-open"></i> Publish Main</li></a>

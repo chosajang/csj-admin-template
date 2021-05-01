@@ -1,1 +1,0 @@
-const adminRoot = '/html/admin/';

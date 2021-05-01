@@ -1,1 +1,0 @@
-const siteRoot = '/html/company/';

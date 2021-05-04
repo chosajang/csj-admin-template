@@ -14,16 +14,22 @@
 
       <div class="grid grid-flow-row gap-4">
 
-        <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded shadow-sm">
-          <div class="col-span-4 sm:col-span-3">
-            <img src="https://placeimg.com/240/200/any" class="rounded-l"/>
-          </div>
-          <div class="col-span-8 sm:col-span-9 p-4">
-            <div class="md:text-xl font-bold text-gray-600">블로그 관리자</div><!--// title -->
-            <div class="text-sm mt-2">회원관리, 게시글 관리등 블로그 사이트 운영에 필요한 관리자용 퍼블리싱 페이지입니다</div><!--// description -->
-          </div>
+        <!--// Card : ST -->
+        <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded shadow-sm border border-gray-50 hover:border-blue-500 cursor-pointer" onclick="location.href='./p/admin'">
+          <div class="col-span-4 sm:col-span-3 bg-cover bg-center rounded-l" style="background-image: url('./assets/images/blog-admin.jpg');"></div>
+          <div class="col-span-8 sm:col-span-9 grid grid-flow-row grid-rows-4 py-4 pr-4">
+            <div class="row-span-1 md:text-xl font-bold text-gray-600 flex items-center">
+              블로그 관리자
+            </div>
+            <div class="row-span-2 text-xs sm:text-sm truncate mt-1"><!--// description -->
+              회원관리, 게시글 관리등 블로그 사이트 운영에 필요한 관리자용 퍼블리싱 페이지입니다<br/>
+            </div>
+            <div class="row-span-1 font-bold text-xs italic flex items-center">
+              프로젝트 시작일 : 2021-05-05
+            </div>
           </div>
         </div>
+        <!--// Card : ED -->
 
       </div>
 

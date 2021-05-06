@@ -14,20 +14,7 @@ const asideHTML = `
   <a href="${documentRoot}company"><li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><i class="far fa-building mr-4"></i>기업 관리</li></a>
   <a href="${documentRoot}account"><li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><i class="far fa-users-cog mr-4"></i>관리자 계정 관리</li></a>
   <li class="pt-4 py-2 pl-4"><p class="text-xs font-bold text-gray-300">참고 메뉴</p></li>
-  <li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500 inline-flex items-center justify-between w-full" for="ext3">
-    <span class="inline-flex items-center"><i class="fas fa-layer-group mr-4"></i>Layouts</span>
-    <span class="pr-4"><i class="fas fa-angle-right transition-transform transform"></i></span>
-  </li>
-  <li id="ext3" class="hidden">
-    <ul class="bg-gray-800">
-      <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500" onclick="location.href='${documentRoot}layouts/wide-layout.html'">
-        <a href="#"><i class="fas fa-angle-right mr-4"></i>Wide Layout</a>
-      </li>
-      <li class="py-3 pl-6 cursor-pointer hover:bg-blue-500" onclick="location.href='${documentRoot}layouts/readable-layout.html'">
-        <a href="#"><i class="fas fa-angle-right mr-4"></i>Readable Layout</a>
-      </li>
-    </ul>
-  </li>
+  <a href="${documentRoot}layout.html"><li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><i class="far fa-layer-group mr-4"></i>레이아웃</li></a>
 </ul>
 <!--// Left Menu : ED -->`;
 

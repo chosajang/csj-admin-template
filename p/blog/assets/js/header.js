@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
   // 헤더 객체 
   let headerObj = document.getElementById('header');
   // 헤더 class 삽입
-  headerObj.classList.add('flex', 'flex-none', 'w-full', 'h-16', 'sticky', 'top-0', 'z-10', 'border-b', 'border-gray-200');
+  headerObj.classList.add('flex', 'flex-none', 'w-full', 'h-16', 'sticky', 'top-0', 'z-50', 'bg-white', 'border-b', 'border-gray-200');
   // 헤더 HTML 삽입
   headerObj.innerHTML = headerHTML;
   

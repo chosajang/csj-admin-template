@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" async>
 </head>
 <body class="bg-gray-50 font-sans md:h-screen flex items-center justify-center">
   <!--// Main : ST -->
@@ -15,14 +15,30 @@
       <div class="grid grid-flow-row gap-4">
 
         <!--// Card : ST -->
-        <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded shadow-sm border border-gray-50 hover:border-blue-500 cursor-pointer" onclick="location.href='./p/admin'">
+        <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded cursor-pointer outline-none border-transparent border-2 shadow-sm hover:border-blue-400 duration-200" onclick="location.href='./p/blog'">
           <div class="col-span-4 sm:col-span-3 bg-cover bg-center rounded-l" style="background-image: url('./assets/images/blog-admin.jpg');"></div>
-          <div class="col-span-8 sm:col-span-9 grid grid-flow-row grid-rows-4 py-4 pr-4">
+          <div class="col-span-8 sm:col-span-9 grid grid-flow-row grid-rows-4 py-4 pr-4 rounded-r">
+            <div class="row-span-1 md:text-xl font-bold text-gray-600 flex items-center">
+              블로그
+            </div>
+            <div class="row-span-2 text-xs sm:text-sm truncate mt-1"><!--// description -->
+              블로그 운영을 위한 퍼블리싱 페이지<br/>
+            </div>
+            <div class="row-span-1 font-bold text-xs italic flex items-center">
+              프로젝트 시작일 : 2021-07-21
+            </div>
+          </div>
+        </div>
+        <!--// Card : ED -->
+        <!--// Card : ST -->
+        <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded cursor-pointer outline-none border-transparent border-2 shadow-sm hover:border-blue-400 duration-200" onclick="location.href='./p/admin'">
+          <div class="col-span-4 sm:col-span-3 bg-cover bg-center rounded-l" style="background-image: url('./assets/images/blog-admin.jpg');"></div>
+          <div class="col-span-8 sm:col-span-9 grid grid-flow-row grid-rows-4 py-4 pr-4 rounded-r">
             <div class="row-span-1 md:text-xl font-bold text-gray-600 flex items-center">
               블로그 관리자
             </div>
             <div class="row-span-2 text-xs sm:text-sm truncate mt-1"><!--// description -->
-              회원관리, 게시글 관리등 블로그 사이트 운영에 필요한 관리자용 퍼블리싱 페이지입니다<br/>
+              회원관리, 게시글 관리등 블로그 사이트 운영에 필요한 관리자용 퍼블리싱 페이지<br/>
             </div>
             <div class="row-span-1 font-bold text-xs italic flex items-center">
               프로젝트 시작일 : 2021-05-05

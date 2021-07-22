@@ -13,7 +13,7 @@
 ### 프로젝트 실행하기
 1. 프로젝트 복사하기
 ```shell
-# git clone https://git-codecommit.ap-northeast-2.amazonaws.com/v1/repos/csj-admin-template
+# git clone https://github.com/chosajang/csj-admin-template
 
 # cd csj-admin-template
 ```

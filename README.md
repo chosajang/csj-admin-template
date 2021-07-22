@@ -13,9 +13,9 @@
 ### 프로젝트 실행하기
 1. 프로젝트 복사하기
 ```shell
-# git clone https://git-codecommit.ap-northeast-2.amazonaws.com/v1/repos/AI_Recruit-publish
+# git clone https://git-codecommit.ap-northeast-2.amazonaws.com/v1/repos/csj-admin-template
 
-# cd AI_Recruit-publish
+# cd csj-admin-template
 ```
 
 2. 로컬 실행환경 설정

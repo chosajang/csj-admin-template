@@ -6,7 +6,6 @@ const headerHTML = `
     <i class="fas fa-bars text-2xl"></i>
   </div>
   <a href="/p/blog" class="flex ml-4 md:ml-10 text-xl text-black items-center font-normal tracking-widest uppercase focus:outline-none focus:shadow-outline">
-    <!-- <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/hexagon.png"/> -->
     조사장 블로그
   </a>
 </div>

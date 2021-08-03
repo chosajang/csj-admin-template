@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSJ 관리자</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+  
+  <script src="../assets/js/common.js"></script>
+  <script defer src="../assets/js/header.js" ></script>
+  <script defer src="../assets/js/sidebar.js" ></script>
+</head>
+<body class="">
+  <!-- // Header : ST -->
+  <header id="header"></header>
+  <!-- // Header : ED -->
+
+  <!--// Main : ST -->
+  <main class="w-full">
+    <!--// Sidebar : ST -->
+    <aside id="aside-menu"></aside>
+    <!--// Sidebar : ED -->
+    
+    <!-- Contents : ST -->
+    <div class="md:ml-52">
+      <div class="container max-w-full m-auto p-4 md:p-6">
+
+        <!--// Card : ST -->
+        <div class="my-4">
+          <div class="grid grid-cols-12 gap-4"><!--// Card Col : ST -->
+
+            <!--// Form : ST -->
+            <div class="col-span-12">
+              <div @mousemove="dragBarStart" class="flex flex-col rounded min-w-full bg-white shadow-sm">
+
+                <!--// Form Body : ST -->
+                <div class="grid grid-cols-4 gap-4 items-center justify-center m-4">
+                  <div class="col-span-4 md:col-span-3">
+                    <label class="block text-sm mb-1" for="title">제목</label>
+                    <input v-model="article.title" class="w-full px-5 py-1 text-2xl text-gray-700 outline-none border-transparent border-b-2 border-blue-100 hover:border-blue-400 focus:border-blue-400 focus:bg-white duration-200" id="title" name="title" type="text" required="true" placeholder="글 제목">
+                  </div>
+                  <div class="col-span-4 md:col-span-1">
+                    <label class="block text-sm mb-1">게시여부</label>
+                    <input type="radio" />Y
+                    <input type="radio" />N
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 items-center justify-center m-4 z-0">
+                  <div class="col-span-1">
+                    <label class="block text-sm" for="cus_name">내용</label>
+                    <div class="bg-gray-300 h-96 flex flex-wrap content-center">
+                      <div class="mx-auto bg-white p-2">Toast UI Editor 사용 예정</div>
+                    </div>
+                    <div @mousedown="dragBarClick" class="w-full h-4 border bg-gray-100 cursor-pointer rounded text-xs text-gray-600 text-center hover:text-blue-600">
+                      <i class="fas fa-sort"></i> 입력창 크기 조절
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-4 gap-4 items-center justify-center m-4">
+                  <div class="col-span-4 md:col-span-1 h-40">
+                    <label class="block text-sm mb-1" for="title">썸네일 이미지</label>
+                    <div class="mx-auto h-32 w-52 cursor-pointer relative rounded-lg">
+                      <img src="../assets/images/blog.png" onerror="this.src='../assets/images/blog.png'" class="absolute object-none object-scale-down object-center bg-gray-100 h-32 w-full mx-auto inset-0 z-0 rounded-lg" alt="thumbnail image url">
+                      <div class="opacity-0 hover:opacity-90 bg-gray-400 duration-200 absolute inset-0 z-10 flex justify-center items-center text-2xl text-white rounded-lg">
+                        <i class="fas fa-camera"></i>
+                      </div>
+                      <input v-bind="article.thumbnail_image" @change="fileChange" accept="image/gif, image/jpeg, image/png" type="file" class="hidden" ref="thumbnail_file">
+                    </div>
+                  </div>
+                  <div class="col-span-4 md:col-span-3 h-40">
+                    <label class="block text-sm mb-1">설명글</label>
+                    <textarea v-model="article.description" class="h-32 w-full resize-none border-transparent border-2 duration-200 border-gray-200 rounded-lg outline-none focus:border-blue-400 hover:border-blue-400 p-2 text-xl" placeholder="블로그 목록에 표시될 설명 글을 작성하세요" ></textarea>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 items-center justify-items-end m-4">
+                  <div class="md:col-start-2">
+                    <input type="button" id="article_cancel" class="rounded bg-gray-500 py-1 px-6 cursor-pointer text-white w-20 ml-2 hover:bg-gray-600" value="취소"/>
+                    <input type="button" id="article_save" class="rounded bg-blue-500 py-1 px-6 cursor-pointer text-white w-26 ml-2 hover:bg-blue-600" value="글 작성하기"/>
+                  </div>
+                </div>
+                <!--// Form Body : ED -->
+              </div>
+            </div><!--// Form : ED -->
+
+          </div><!--// Card Col : ED -->
+        </div><!--// Card : ED -->
+
+      </div>
+    </div>
+    <!-- Contents : ED -->
+  </main>
+  <!--// Main : ED -->
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    // 등록 버튼
+    document.getElementById('article_save').addEventListener('click', () => {
+      Swal.fire({
+        title: '글 작성하기',
+        text: '작성한 글을 등록하시겠습니까?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: `네, 등록합니다`,
+        cancelButtonText: `아니오`,
+        reverseButtons: true
+      }).then((result) => {
+        // 등록 API 호출
+        if (result.isConfirmed) {
+          Swal.fire('등록되었습니다', '', 'success')
+          location.href = './view.html'
+        }
+      })
+    })
+
+    // 등록 취소 버튼
+    document.getElementById('article_cancel').addEventListener('click', () => {
+      Swal.fire({
+        title: '등록 취소',
+        text: '글 등록을 취소하시겠습니까?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: `네, 취소합니다`,
+        confirmButtonColor: '#FF0000',
+        cancelButtonText: `아니오`,
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          location.href = './'
+        }
+      })
+    })
+  })
+</script>
+</html>

@@ -6,8 +6,8 @@ const headerHTML = `
 <!--// logo -->
 <div class="flex flex-grow md:w-64 items-center z-10">
   <a href="#" class="flex m-auto md:ml-3 text-lg text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
-    <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/research.png"/>
-    CSJ Admin Template
+    <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/cell.png"/>
+    블로그 관리자
   </a>
 </div>
 <!--// personal menu -->

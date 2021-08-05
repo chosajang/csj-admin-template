@@ -12,7 +12,10 @@ const headerHTML = `
 <!--// search menu -->
 <div class="flex flex-none items-center px-2 md:px-4 md:mr-4 z-11 relative min-w-min">
   <input class="w-40 md:w-48 h-10 pl-4 pr-8 py-1 text-lg md:text-xl text-gray-700 font-medium outline-none border-transparent border-b-2 border-gray-200 hover:border-yellow-400 focus:border-yellow-400 focus:bg-white duration-300" type="text" maxlength=20 placeholder="검색">
-  <span id="search-icon" class="absolute right-4 md:right-8 text-gray-600 cursor-pointer"><i class="fas fa-search text-2xl"></i></span>
+  <span id="search-icon" class="absolute right-4 md:right-28 text-gray-600 cursor-pointer"><i class="fas fa-search text-2xl"></i></span>
+  <div class="ml-4 cursor-pointer" onclick="location.href='/'">
+    <i class="fas fa-door-open text-xl text-gray-700"></i> 나가기
+  </div>
 </div>`;
 
 /**

@@ -13,13 +13,13 @@ const headerHTML = `
 <!--// personal menu -->
 <div class="flex flex-none items-center px-4 z-11">
   <div id="personal-info" class="mr-4 text-gray-200 cursor-pointer"><i class="fas fa-user text-2xl"></i></div>
+  <div class="ml-4 cursor-pointer text-white" onclick="location.href='/'">
+    <i class="fas fa-door-open text-xl"></i> 나가기
+  </div>
   <div id="personal-menu" class="fixed hidden top-16 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
     <ul class="w-full text-sm select-none">
       <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-user-circle"></i> Profile</li>
       <a href="${documentRoot}login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
-    </ul>
-    <ul class="w-full text-sm select-none border-t-2">
-      <a href="/"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-door-open"></i> Publish Main</li></a>
     </ul>
   </div>
 </div>`;

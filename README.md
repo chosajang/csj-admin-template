@@ -19,14 +19,17 @@
 # cd csj-template
 ```
 
-2. 로컬 실행환경 설정
+2. 로컬 환경 설정
+- http-server 설치
 ```shell
 # yarn
 
 # yarn add http-server
-```
 
-3. http 서버 설치 및 실행
-```shell
 # yarn http-server --port=80 /
+Starting up http-server, serving ./
+Available on:
+  http://127.0.0.1:80
+  http://192.168.9.95:80
+
 ```

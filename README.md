@@ -20,7 +20,7 @@
 ```
 
 2. 로컬 환경 설정
-- http-server 설치
+- http-server 설치 및 실행
 ```shell
 # yarn
 

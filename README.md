@@ -1,5 +1,5 @@
 ## CSJ Template
-- 결과 사이트 주소 : [template.chosajang.com](template.chosajang.com)
+- 결과 사이트 주소 : [template.chosajang.com](http://template.chosajang.com)
 - 개발스펙 : HTML5, Javascript, Tailwind CSS 2.x, Font Awesome 5.x Free
 - Tailwind, Font Awesome 선언
 ```javascript

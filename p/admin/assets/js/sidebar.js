@@ -15,8 +15,12 @@ const asideHTML = `
   <a href="${documentRoot}article"><li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><i class="fas fa-feather-alt mr-4"></i>게시물 관리</li></a>
   <li class="pt-4 py-2 pl-4"><p class="text-xs font-bold text-gray-300">참고 메뉴</p></li>
   <a href="${documentRoot}layout.html"><li class="py-3 pl-4 cursor-pointer hover:bg-gray-600 border-l-4 border-transparent hover:border-blue-500"><i class="far fa-layer-group mr-4"></i>레이아웃</li></a>
-</ul>
-<!--// Left Menu : ED -->`;
+</ul><!--// Left Menu : ED -->
+<!--// Project Exit : ST -->
+<div class="w-full absolute bottom-0 bg-blue-500 text-center flex items-center justify-center h-14 cursor-pointer" onclick="location.href='/'">
+    <span class="mr-2 text-lg">프로젝트 나가기</span><img src="/p/admin/assets/images/exit-64.png" class="w-14"/>
+</div><!--// Project Exit : ED -->
+`;
 
 /**
  * DOM 트리 완성 후 실행

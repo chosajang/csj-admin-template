@@ -28,10 +28,51 @@
         <div class="text-2xl md:text-3xl text-gray-800 border-b border-gray-100 pb-4 mb-4">블로그 제작하기 - 개발 및 운영 환경</div>
         <div class="text-gray-400 text-xs md:text-sm"><i class="far fa-calendar-alt mr-2"></i>2021-07-21</div>
       </div>
-      
-      <!--// 내용 -->
-      <div class="mx-2 md:mx-0">내용</div>
 
+      <!-- 내용 -->
+      <div class="mx-2 md:mx-0">
+        <!-- 게시물 내용 -->
+        <div>
+          <p class="text-2xl border-b border-gray-600">H1 : 기획부터 개발까지.. 내가 지금 무슨 짓을..</p>
+          <p class="text-xl">H2 : 기획부터 개발까지.. 내가 지금 무슨 짓을..</p>
+          <p class="text-lg">H3 : 기획부터 개발까지.. 내가 지금 무슨 짓을..</p>
+          <p>&nbsp;</p>
+          <p class="text-base">기획부터 개발까지.. 내가 지금 무슨 짓을..</p>
+          <p>&nbsp;</p>
+          <p>여기에는 Toast UI Editor(Viewer)를 사용하여 출력할 예정입니다.</p>
+        </div>
+        <!-- 업데이트 내역 -->
+        <p class="mt-10 text-sm text-gray-600">이 글은 2021-07-03에 마지막으로 수정했습니다.</p>
+        <!-- 목록 버튼 -->
+        <div class="grid grid-cols-1 items-center m-4">
+          <div class="col-span-1 grid justify-items-end">
+            <div>
+              <input type="button" value="목록" onclick="location.href='./'" class="rounded bg-gray-500 py-1 px-6 cursor-pointer text-lg text-white w-24 ml-6 hover:bg-gray-600">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 작성자 -->
+      <div class="flex border-t border-b mt-10 py-6 md:py-10">
+        <div class="flex-none flex items-center ml-6 md:ml-10 w-16 md:w-20 mr-1 md:mr-0">
+          <img src="/p/blog/assets/images/user.png" class="absolute object-none object-scale-down object-center rounded-full w-16 h-16 md:w-20 md:h-20" onerror="this.src='../assets/images/user.png'" />
+        </div>
+        <div class="flex-grow grid grid-flow-row grid-rows-2 ml-6 md:ml-10">
+          <div class="row-span-1 text-lg md:text-xl">
+            조사장
+            <span class="text-xs text-gray-400 mx-2 align-middle">|</span>
+            개발자</div>
+          <div class="row-span-1 text-gray-500 text-base md:text-lg">
+            평범한 직장인이며, 좋은 개발자가 되기 위해 노력하고 있습니다.
+          </div>
+        </div>
+      </div>
+
+      <!-- 댓글 영역 -->
+      <div class="mt-10 bg-gray-300 h-32 flex flex-wrap content-center">
+        <div class="mx-auto bg-white p-2">댓글 영역</div>
+      </div>
     </div>
     <!--// Contents : ED -->
   </main>

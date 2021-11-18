@@ -1,0 +1,1 @@
+const documentRoot = '/p/web-console/';

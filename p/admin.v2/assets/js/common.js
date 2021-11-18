@@ -1,1 +1,0 @@
-const documentRoot = '/p/admin/';

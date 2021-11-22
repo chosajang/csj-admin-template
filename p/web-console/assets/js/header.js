@@ -13,7 +13,7 @@ const headerHTML = `
 <!--// personal menu -->
 <div class="flex flex-none items-center px-4 z-11">
   <div id="personal-info" class="mr-4 text-gray-200 cursor-pointer"><i class="fas fa-user text-xl"></i></div>
-  <div id="personal-menu" class="fixed hidden top-16 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
+  <div id="personal-menu" class="fixed hidden top-14 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
     <ul class="w-full text-sm select-none">
       <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-user-circle"></i> Profile</li>
       <a href="${documentRoot}login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>

@@ -1,20 +1,15 @@
 const headerHTML = `
-<!--// mobile menu icon -->
-<!--<div id="mobile-menu-btn" class="flex flex-none items-center px-4 bg-gray-800 md:hidden cursor-pointer text-gray-200">-->
-<!--  <i class="fas fa-bars text-xl"></i>-->
-<!--</div>-->
-<!--// logo -->
-<div class="flex flex-grow md:flex-none md:w-52 items-center z-10">
-  <a href="#" class="flex m-auto md:ml-3 text text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
+<div class="flex flex-none items-center mx-2 z-10">
+  <a href="#" class="flex m-auto text text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
     <img class="w-6 h-6 mr-2" src="${documentRoot}assets/images/logo.png" alt="Site Logo" />
     Web Console
   </a>
 </div>
 
-<!--// Menu -->
-<div id="web-menu" class="hidden md:flex md:flex-grow items-center text-left text-white text-sm z-11">
-    <i class="fas fa-bars text-xl mr-2"></i>
-    여기에 | 메뉴가 | 하나씩
+<!--// Web:Menu -->
+<div id="web-menu" class="flex flex-grow items-center text-left text-white text-sm z-11">
+    <i class="md:hidden fas fa-bars text-xl mr-2"></i>
+    <span class="hidden md:flex text-xs">여기에 | 메뉴가 | 하나씩 | 들어가면 | 되겠네</span>
 </div>
 
 <!--// Menu Detail -->

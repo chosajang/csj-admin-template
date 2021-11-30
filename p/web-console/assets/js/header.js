@@ -14,7 +14,14 @@ const headerHTML = `
 
 <!--// Menu Detail -->
 <div id="menu-detail" class="hidden fixed top-12 left-0 w-screen h-20 bg-gray-700 transition duration-500 ease-out">
-    살짝 서서히 나왔으면...
+    <div>
+      <ul class="text-gray-300">
+        <li class="pt-4 py-2 pl-4"><p class="text-xs font-bold">기본 메뉴</p></li>
+        <li class="py-3 pl-4 cursor-pointer"><i class="fas fa-columns mr-4"></i>대시보드</li>
+        <li></li>    
+      </ul>    
+    </div>
+    
 </div>
 
 <!--// personal menu -->

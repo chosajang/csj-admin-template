@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<html lang="ko">
 <head>
+  <title>CSJ Template Page</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" async>
-  <meta property="og:title" content="CSJ 퍼블리싱 사이트" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" async="async">
+  <meta property="og:title" content="CSJ Template Page" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://template.chosajang.com" />
   <meta property="og:image" content="http://template.chosajang.com/assets/images/blog-service.png" />
@@ -18,6 +19,23 @@
     <div class="container m-auto max-w-screen-lg p-4 md:p-6">
 
       <div class="grid grid-flow-row gap-4">
+
+        <!--// Card : ST -->
+        <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded cursor-pointer outline-none" onclick="location.href='./p/web-console'">
+          <div class="col-span-4 sm:col-span-3 bg-gray-200 bg-cover bg-center rounded-l" style="background-image: url('./assets/images/web-console.png');"></div>
+          <div class="col-span-8 sm:col-span-9 grid grid-flow-row grid-rows-4 py-4 pr-4 rounded-r">
+            <div class="row-span-1 md:text-xl font-bold text-gray-600 flex items-center">
+              웹 콘솔
+            </div>
+            <div class="row-span-2 text-xs sm:text-sm truncate mt-1"><!--// description -->
+              기존 관리자 페이지를 확장하기위한 기능개선 버전<br/>
+            </div>
+            <div class="row-span-1 font-bold text-xs italic flex items-center">
+              시작일~종료일 : 2021-12-01 ~ 진행중..
+            </div>
+          </div>
+        </div>
+        <!--// Card : ED -->
 
         <!--// Card : ST -->
         <div class="grid grid-flow-col grid-cols-12 gap-4 bg-white rounded cursor-pointer outline-none" onclick="location.href='./p/blog'">

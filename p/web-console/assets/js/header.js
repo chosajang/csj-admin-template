@@ -1,17 +1,20 @@
 const headerHTML = `
-<!-- // 
-<div class="flex flex-none items-center mx-2 z-10">
-  <a href="#" class="flex m-auto text text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
+<!--// Mobile : sidebar toggle -->
+<div class="flex flex-none md:hidden items-center z-10 mx-4">
+  <i class="fas fa-bars text-xl"></i>
+</div>
+
+<!--// Site Logo -->
+<div class="flex flex-grow md:flex-none items-center z-10 w-52">
+  <a href="#" class="flex m-auto text text-gray-800 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
     <img class="w-6 h-6 mr-2" src="${documentRoot}assets/images/logo.png" alt="Site Logo" />
     Web Console
   </a>
 </div>
--->
 
 <!--// Web:Menu -->
-<div id="navigation" class="flex flex-grow items-center text-left text-sm z-11 pl-4">
-    <i class="md:hidden fas fa-bars text-xl mr-2"></i>
-    <span class="hidden md:flex text-xs">Navigation</span>
+<div id="navigation" class="hidden md:flex flex-grow items-center text-left text-sm z-11 pl-4">
+<!--    <span class="text-xs">Navigation</span>-->
 </div>
 
 <!--// Menu Detail -->
@@ -45,7 +48,8 @@ const headerHTML = `
 
 document.addEventListener("DOMContentLoaded", function(){
   let header = document.getElementById('header');
-  header.classList.add('fixed', 'top-0', 'z-40', 'md:pl-52', 'flex', 'flex-none', 'w-full', 'h-12','border-b','border-gray-300');
+  header.classList.add('fixed', 'top-0', 'z-50', 'flex', 'flex-none', 'w-full', 'h-12');
+  header.classList.add('bg-white','border-b','border-gray-300');
   header.innerHTML = headerHTML;
   
   // 헤더 : 개인 메뉴

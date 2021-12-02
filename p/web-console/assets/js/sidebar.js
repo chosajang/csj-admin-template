@@ -1,10 +1,11 @@
 const asideHTML = `
+<!--
 <div class="flex flex-none items-center h-12 bg-gray-800">
   <a href="#" class="flex m-auto text-base text-gray-200 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
     <img class="w-6 h-6 mr-2" src="${documentRoot}assets/images/logo.png" alt="Site Logo" />
     Web Console
   </a>
-</div>
+</div> -->
 <!--// Left Menu : ST -->
 <div>
   <ul class="select-none" id="menu-ext">
@@ -24,7 +25,7 @@ const asideHTML = `
  */
 document.addEventListener("DOMContentLoaded", function(){
   let asideObj = document.getElementById('aside-menu');
-  asideObj.classList.add('fixed','top-0','left-0','z-50','w-52','h-screen');
+  asideObj.classList.add('fixed','top-0','left-0','z-40','w-52','pt-12','h-screen');
   asideObj.classList.add('bg-gray-800','text-gray-200','text-sm');
   asideObj.classList.add('items-center','overflow-y-auto','flex-row','flex-no-wrap','overflow-hidden','shadow-md');
   asideObj.classList.add('transform','-translate-x-52','md:translate-x-0','ease-out','duration-200');

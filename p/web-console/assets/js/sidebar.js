@@ -43,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function(){
       }
     });
   });
-  
-  // 모바일 메뉴 이벤트
-  const btnMobileMenuObj = document.getElementById('mobile-menu-btn');
-  
-  btnMobileMenuObj.addEventListener('click',() => {
-    asideObj.classList.toggle('hidden');
-  });
 
   // 주소기반 메뉴 포커스
   const currentUrl = window.location.href;

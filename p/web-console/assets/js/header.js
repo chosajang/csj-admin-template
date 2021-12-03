@@ -1,7 +1,7 @@
 const headerHTML = `
 <!--// Mobile : sidebar toggle -->
-<div class="flex flex-none md:hidden items-center z-10 mx-4">
-  <i class="fas fa-bars text-xl"></i>
+<div id="aside-toggle" class="flex flex-none md:hidden items-center text-center px-4 z-10 cursor-pointer hover:text-blue-500 border-transparent border-2 hover:border-gray-200 hover:bg-gray-200 duration-100">
+  <i id="aside-icon" class="fas fa-bars text-xl w-5"></i>
 </div>
 
 <!--// Site Logo -->
@@ -16,19 +16,6 @@ const headerHTML = `
 <div id="navigation" class="hidden md:flex flex-grow items-center text-left text-sm z-11 pl-4">
 <!--    <span class="text-xs">Navigation</span>-->
 </div>
-
-<!--// Menu Detail -->
-<!--//
-<div id="menu-detail" class="hidden fixed top-12 left-0 pl-52 w-screen h-20 bg-gray-700 transition duration-500 ease-out">
-    <div>
-      <ul class="text-gray-500">
-        <li class="pt-4 py-2 pl-4"><p class="text-xs font-bold">기본 메뉴</p></li>
-        <li class="py-3 pl-4 cursor-pointer"><i class="fas fa-columns mr-4"></i>대시보드</li>
-        <li></li>    
-      </ul>    
-    </div>
-</div>
--->
 
 <!--// personal menu -->
 <div class="flex flex-none items-center px-4 z-12">
@@ -60,10 +47,27 @@ document.addEventListener("DOMContentLoaded", function(){
     personalMenu.classList.toggle('hidden');
   });
 
-  // 웹 메뉴 버튼
-  // const webMenuObj = document.getElementById('navigation');
-  // const menuDetailObj = document.getElementById('menu-detail');
-  // webMenuObj.addEventListener('click', () => {
-  //   menuDetailObj.classList.toggle('hidden');
-  // });
+  // 메뉴 버튼
+  const asideToggleBtn = document.getElementById('aside-toggle');
+  const sidebarMenu = document.getElementById('aside-menu');
+  const asideIcon = document.getElementById('aside-icon')
+  asideToggleBtn.addEventListener('click', () => {
+    sidebarMenu.classList.toggle('-translate-x-52');
+    sidebarMenu.classList.toggle('md:translate-x-0');
+    asideIcon.classList.toggle('fa-bars');
+    asideIcon.classList.toggle('fa-times');
+  });
+
+  // 브라우저 크기 변경 시, 토글 기능 초기화
+  let timer = null;
+  const timeout = 500;
+  window.addEventListener('resize', () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      sidebarMenu.classList.add('-translate-x-52');
+      sidebarMenu.classList.add('md:translate-x-0');
+      asideIcon.classList.add('fa-bars');
+      asideIcon.classList.remove('fa-times');
+    }, timeout);
+  });
 });

@@ -8,7 +8,7 @@ const headerHTML = `
 <div class="flex flex-grow md:flex-none items-center z-10 w-52">
   <a href="#" class="flex m-auto text text-gray-800 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
     <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/resources.png" alt="Site Logo" />
-    Web Console
+    Resouces
   </a>
 </div>
 
@@ -27,7 +27,7 @@ const headerHTML = `
   <div id="personal-menu" class="fixed hidden top-11 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
     <ul class="w-full text-sm select-none">
       <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-user-circle"></i> Profile</li>
-      <a href="${documentRoot}login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
+      <a href="${documentRoot}/login/login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
     </ul>
   </div>
 </div>`;

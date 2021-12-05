@@ -20,9 +20,10 @@ const headerHTML = `
 <!--// personal menu -->
 <div class="flex flex-none items-center px-4 z-12">
   <span class="text-sm text-gray-800 mr-4">|</span>
-  <div id="personal-info" class="mr-2 px-1 text-gray-800 cursor-pointer hover:text-blue-500 rounded-sm border-transparent border-2 hover:border-gray-200 hover:bg-gray-200 duration-100">
-    <span class="text-xs">Jonny</span>
-    <i class="fas fa-cog text-sm"></i>
+  <div id="personal-info" class="flex mr-2 px-1 items-center text-gray-800 cursor-pointer hover:text-blue-500 rounded-sm border-transparent border-2 hover:border-gray-100 hover:bg-gray-100 duration-100">
+    <span class="text-xs font-bold mr-2">Jonny</span>
+    <!--<i class="fas fa-cog text-sm"></i>-->
+    <img src="./assets/images/man.png" class="h-8 w-8 rounded bg-blue-300" alt="profile">
   </div>
   <div id="personal-menu" class="fixed hidden top-11 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
     <ul class="w-full text-sm select-none">

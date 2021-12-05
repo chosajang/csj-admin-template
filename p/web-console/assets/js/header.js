@@ -7,7 +7,7 @@ const headerHTML = `
 <!--// Site Logo -->
 <div class="flex flex-grow md:flex-none items-center z-10 w-52">
   <a href="#" class="flex m-auto text text-gray-800 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
-    <img class="w-6 h-6 mr-2" src="${documentRoot}assets/images/logo.png" alt="Site Logo" />
+    <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/resources.png" alt="Site Logo" />
     Web Console
   </a>
 </div>

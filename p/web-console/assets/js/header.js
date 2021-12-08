@@ -8,27 +8,32 @@ const headerHTML = `
 <div class="flex flex-grow md:flex-none items-center z-10 w-52">
   <a href="#" class="flex m-auto text text-gray-800 items-center font-semibold tracking-widest uppercase focus:outline-none focus:shadow-outline">
     <img class="w-8 h-8 mr-2" src="${documentRoot}assets/images/resources.png" alt="Site Logo" />
-    Resouces
+    Jupiter&IO 개선
   </a>
 </div>
 
 <!--// Web:Menu -->
 <div id="navigation" class="hidden md:flex flex-grow items-center text-left text-sm z-11 pl-4">
-<!--    <span class="text-xs">Navigation</span>-->
+    <span class="mr-4">|</span>
+    <span class="text-xs">메인</span>
+    <span class="mx-4"></span>
+    <span class="text-xs">인프라 자원</span>
+    <span class="mx-4"></span>
+    <span class="text-xs">자원관리</span>
 </div>
 
 <!--// personal menu -->
 <div class="flex flex-none items-center px-4 z-12">
   <span class="text-sm text-gray-800 mr-4">|</span>
   <div id="personal-info" class="flex mr-2 px-1 items-center text-gray-800 cursor-pointer hover:text-blue-500 rounded-sm border-transparent border-2 hover:border-gray-100 hover:bg-gray-100 duration-100">
-    <span class="text-xs font-bold mr-2">Jonny</span>
+    <span class="text-xs font-bold mr-4">Jonny</span>
     <!--<i class="fas fa-cog text-sm"></i>-->
     <img src="./assets/images/man.png" class="h-8 w-8 rounded bg-blue-300" alt="profile">
   </div>
   <div id="personal-menu" class="fixed hidden top-11 right-1 w-40 rounded-sm bg-white z-20 border border-top-none border-solid border-gray-300">
     <ul class="w-full text-sm select-none">
       <li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-user-circle"></i> Profile</li>
-      <a href="${documentRoot}/login/login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
+      <a href="${documentRoot}login/login.html"><li class="pl-2 py-2 cursor-pointer hover:bg-blue-400 hover:text-white"><i class="fas fa-sign-out-alt"></i> Logout</li></a>
     </ul>
   </div>
 </div>`;

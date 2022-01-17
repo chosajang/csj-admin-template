@@ -41,7 +41,7 @@ const headerHTML = `
 
 document.addEventListener("DOMContentLoaded", function(){
   let header = document.getElementById('header');
-  header.classList.add('fixed', 'top-0', 'z-50', 'flex', 'flex-none', 'w-full', 'h-12');
+  header.classList.add('sticky', 'top-0', 'z-50', 'flex', 'flex-none', 'w-full', 'h-12');
   header.classList.add('bg-white','border-b','border-gray-300');
   header.innerHTML = headerHTML;
   
